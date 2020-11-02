@@ -9,28 +9,44 @@
     <title>Singolo</title>
   </head>
   <body>
-    <header class="header">
-      <div class="layout-2-column">
-        <h1 class="header__logo">SINGOLO<span>*</span></h1>
-        <nav class="header__navigation">
-          <a href="#home-mark" class="header_link navigation_home-mark">HOME
-            <span>&#183;</span>
-          </a>
-          <a href="#our-services-mark" class="header_link header_linknavigation_our-services-mark">SERVICES
-            <span>&#183;</span>
-          </a>
-          <a href="#portfolio-mark" class="header_link header_linknavigation_portfolio-mark">PORTFOLIO
-            <span>&#183;</span>
-          </a>
-          <a href="#" class="header_link">ABOUT
-            <span>&#183;</span>
-          </a>
-          <a href="#" class="header_link">CONTACT            
-          </a>
-        </nav>
-      </div>
-    </header>
-    <section class="silder" id="home-mark">
+    <div class="background-header">
+      <header class="header">
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#home-mark">HOME</a></li>
+            <li><a class="menu__item" href="#our-services-mark">SERVICES</a></li>
+            <li><a class="menu__item" href="#portfolio-mark">PORTFOLIO</a></li>
+            <li><a class="menu__item" href="#">ABOUT</a></li>
+            <li><a class="menu__item" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="layout-2-column">
+          <h1 class="header__logo">SINGOLO<span>*</span></h1>                    
+          <nav class="header__navigation ">
+            <a href="#home-mark" class="header_link navigation_home-mark">HOME
+              <span>&#183;</span>
+            </a>
+            <a href="#our-services-mark" class="header_link header_linknavigation_our-services-mark">SERVICES
+              <span>&#183;</span>
+            </a>
+            <a href="#portfolio-mark" class="header_link header_linknavigation_portfolio-mark">PORTFOLIO
+              <span>&#183;</span>
+            </a>
+            <a href="#" class="header_link">ABOUT
+              <span>&#183;</span>
+            </a>
+            <a href="#" class="header_link">CONTACT  
+            </a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div class="background-silder">   
+      <section class="silder" id="home-mark">
       <div class="slider__left-chev">
         <a href="#" >
           <img src="img/left-chev.png" alt="Switch to left">
@@ -48,6 +64,8 @@
         </div>
       </div>
     </section>
+  </div>
+  <div class="background-services">
     <section class="services" id="our-services-mark">
       <div class="services__header">
         <h2 class="services_caption">Our Services</h2>
@@ -113,7 +131,9 @@
         </div>
       </div>
     </section>
-    <section class="portfolio" id="portfolio-mark">
+  </div>
+  <div class="background-portfolio">
+  <section class="portfolio" id="portfolio-mark">
       <div class="portfolio__header">
         <h2 class="portfolio__caption" >Portfolio</h2>
         <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor
@@ -121,26 +141,28 @@
         </p>
       </div>
       <div class="portfolio__buttons">
-        <button class="button">All</button>
-        <button class="button">Web Design</button>
-        <button class="button">Graphic Design</button>
-        <button class="button">Artwork</button>
+        <button class="button button__all">All</button>
+        <button class="button button__web-design">Web Design</button>
+        <button class="button button__graphic-gesign">Graphic Design</button>
+        <button class="button button__artwork">Artwork</button>
       </div>
       <div class="layout-4-column">
-        <img class="layout-4-column_img portfolio_img1" src="img/portfolio/boat.png" alt="Boat">
-        <img class="layout-4-column_img portfolio_img2" src="img/portfolio/smile .png" alt="Smile">
-        <img class="layout-4-column_img portfolio_img3" src="img/portfolio/noir.png" alt="Noir">
-        <img class="layout-4-column_img portfolio_img4" src="img/portfolio/android.png" alt="Android">
-        <img class="layout-4-column_img portfolio_img5" src="img/portfolio/party.png" alt="Party">
-        <img class="layout-4-column_img portfolio_img6" src="img/portfolio/stack.png" alt="Stack">
-        <img class="layout-4-column_img portfolio_img7" src="img/portfolio/kids.png" alt="Kids">
-        <img class="layout-4-column_img portfolio_img8" src="img/portfolio/birds.png" alt="Birds">
-        <img class="layout-4-column_img portfolio_img9" src="img/portfolio/monster.png" alt="Monster">
-        <img class="layout-4-column_img portfolio_img10" src="img/portfolio/words.png" alt="Words">
-        <img class="layout-4-column_img portfolio_img11" src="img/portfolio/scarry.png" alt="Scarry">
-        <img class="layout-4-column_img portfolio_img12" src="img/portfolio/broken.png" alt="Broken">
+        <img class="layout-4-column_img portfolio_img1 portfolio_web" src="img/portfolio/boat.png" alt="Boat">
+        <img class="layout-4-column_img portfolio_img2 portfolio_gesign" src="img/portfolio/smile .png" alt="Smile">
+        <img class="layout-4-column_img portfolio_img3 portfolio_artwork" src="img/portfolio/noir.png" alt="Noir">
+        <img class="layout-4-column_img portfolio_img4 portfolio_web" src="img/portfolio/android.png" alt="Android">
+        <img class="layout-4-column_img portfolio_img5 portfolio_artwork" src="img/portfolio/party.png" alt="Party">
+        <img class="layout-4-column_img portfolio_img6 portfolio_web" src="img/portfolio/stack.png" alt="Stack">
+        <img class="layout-4-column_img portfolio_img7 portfolio_web" src="img/portfolio/kids.png" alt="Kids">
+        <img class="layout-4-column_img portfolio_img8 portfolio_gesign" src="img/portfolio/birds.png" alt="Birds">
+        <img class="layout-4-column_img portfolio_img9 portfolio_artwork" src="img/portfolio/monster.png" alt="Monster">
+        <img class="layout-4-column_img portfolio_img10 portfolio_web" src="img/portfolio/words.png" alt="Words">
+        <img class="layout-4-column_img portfolio_img11 portfolio_gesign" src="img/portfolio/scarry.png" alt="Scarry">
+        <img class="layout-4-column_img portfolio_img12 portfolio_artwork" src="img/portfolio/broken.png" alt="Broken">
       </div>
     </section>
+  </div>
+  <div class="background-portfolio">
     <footer class="footer">
       <h3 class="footer__copyright">© Copyright 2013</h3>
       <ul class="footer__social-networks">
@@ -158,28 +180,7 @@
         </li>
       </ul>
     </footer>
+  </div>  
+    <script src="script.js"></script>
   </body>
 </html>
-
-<!-- <div class="burder-menu">
-
-  <a href="#" class="burger-menu__button">
-    <span class="burger-menu__lines "></span>
-  </a>
-  <nav class="burger-menu__nav">
-    <a href="#" class="burger-menu__link">HOME</a>
-    <a href="#" class="burger-menu__link">SERVICES</a>
-    <a href="#" class="burger-menu__link">PORTFOLIO</a>
-    <a href="#" class="burger-menu__link">ABOUT</a>
-    <a href="#" class="burger-menu__link">CONTACT</a>
-  </nav>
-  <div class="burger-menu__overlay"></div>
-</div>
-<section><a href="#home-mark" class="header_link navigation_home-mark">HOME</a></section>
-<section><a href="#our-services-mark" class="header_link header_linknavigation_our-services-mark">SERVICES</a></section>
-<section><a href="#portfolio-mark" class="header_link header_linknavigation_portfolio-mark">PORTFOLIO<span>&#183;</span></a> </a></section>
-<section><a href="#" class="header_link">ABOUT<span>&#183;</span> </a></section>
-<section><a href="#" class="header_link">CONTACT</a></section>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="script.js"></script> -->
