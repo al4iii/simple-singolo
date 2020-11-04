@@ -11,14 +11,15 @@ const left_chev = document.querySelector('.slider__left-chev');
 
 
 all.addEventListener('click', () => {
-  console.log("привет")
+  console.log("привет")  
   web_img.classList.remove('image-hide');
   graphic_img.classList.remove('image-hide');
   artwork_img.classList.remove('image-hide');
 });
 web.addEventListener('click', () => {
-  console.log("привет")  
-  web_img.classList.toggle('image-hide');
+  console.log("привет")
+  console.log(web_img.length)    
+  web_img.classList.toggle('image-hide');  
 });
 graphic.addEventListener('click', () => {
   console.log("привет")

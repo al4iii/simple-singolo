@@ -171,6 +171,7 @@ a span {
   line-height: 30px;
   font-style: normal;
   word-spacing: 4.5px;
+  overflow: hidden;
 }
 
 .services__list {
@@ -242,6 +243,7 @@ a span {
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
+  overflow: hidden;
 }
 
 .services__item_text {
@@ -251,6 +253,7 @@ a span {
   font-size: 12px;
   font-weight: normal;
   line-height: 22px;
+  overflow: hidden;
 }
 
 .services_img {
@@ -293,6 +296,10 @@ a span {
   display: grid;
   grid-template-columns: 220px 20px 220px 20px 220px 20px 220px;
   grid-template-rows: 187px 20px 187px 20px 187px;
+}
+
+.layout-4-column > img:nth-child(n + 13) {
+  display: none;
 }
 
 .portfolio__caption {
@@ -377,7 +384,7 @@ a span {
 
 .image-hide {
   opacity: 0;
-  transition: 0.15s;
+  transition: 0.2s;
 }
 
 .button {
@@ -438,7 +445,6 @@ a span {
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
-
   /* Header Table */
 
   .header {
@@ -630,7 +636,6 @@ a span {
 }
 
 @media screen and (max-width: 767px) {
-
   /* Header Mobile */
 
   .background-header {
@@ -880,7 +885,7 @@ a span {
     line-height: 30.5px;
     word-spacing: 2.8px;
   }
-  
+
   .services__item1 {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -930,6 +935,10 @@ a span {
   .layout-4-column {
     grid-template-columns: 151px 13px 151px;
     grid-template-rows: 128px 14px 128px 14px 128px 14px 128px 39px;
+  }
+
+  .layout-4-column > img:nth-child(n + 9) {
+    display: none;
   }
 
   .portfolio_img1 {
@@ -986,22 +995,6 @@ a span {
     grid-column: 3/4;
     height: 128px;
     width: 151px;
-  }
-
-  .portfolio_img9 {
-    display: none;
-  }
-
-  .portfolio_img10 {
-    display: none;
-  }
-
-  .portfolio_img11 {
-    display: none;
-  }
-
-  .portfolio_img12 {
-    display: none;
   }
 
   .portfolio__buttons {
