@@ -3,7 +3,7 @@ body {
   font-family: Lato, sans-serif;
   display: grid;
   grid-gap: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 /* Header DT */
@@ -28,7 +28,7 @@ body {
 .layout-2-column {
   display: grid;
   grid-template-columns: 40px 124px 1fr 373px 40px;
-  grid-template-rows: 30px 26px 33.5px;
+  grid-template-rows: 30px 26px 34px;
 }
 
 .header__logo {
@@ -170,7 +170,7 @@ a span {
   font-weight: 300;
   line-height: 30px;
   font-style: normal;
-  word-spacing: 4.5px;
+  word-spacing: 4px;
   overflow: hidden;
 }
 
@@ -260,6 +260,8 @@ a span {
   align-self: center;
   padding-bottom: 6px;
   padding-right: 5px;
+  width: 62px;
+  height: 61px;
 }
 
 /* Portfolio DT */
@@ -478,12 +480,12 @@ a span {
     width: 768px;
     grid-template-columns: 83px 183px 54px 363px;
     grid-template-rows: 41px 345px 60px;
-    border-bottom: 4.5px;
+    border-bottom: 5px;
   }
 
   .silder__content {
     grid-template-rows: 93px 270px;
-    grid-template-columns: 180px 54.5px 363px;
+    grid-template-columns: 180px 55px 363px;
   }
 
   .silder__content_phohe-vertical {
@@ -564,12 +566,12 @@ a span {
   }
 
   .portfolio__text {
-    word-spacing: 3.4px;
+    word-spacing: 3px;
   }
 
   .layout-4-column {
-    grid-template-columns: 216px 19px 216px 19.65px 216px;
-    grid-template-rows: 183px 19.65px 183px 19.65px 183px 19.65px 183px;
+    grid-template-columns: 216px 20px 216px 20px 216px;
+    grid-template-rows: 183px 20px 183px 20px 183px 20px 183px;
   }
 
   .layout-4-column > img {
@@ -654,7 +656,7 @@ a span {
     font-size: 20px;
     font-style: normal;
     font-weight: bold;
-    font-size: 19.6875px;
+    font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.03em;
   }
@@ -813,13 +815,13 @@ a span {
 
   .silder {
     width: 375px;
-    grid-template-columns: 40px 89px 26px 177.5px 41px;
+    grid-template-columns: 40px 89px 26px 178px 41px;
     grid-template-rows: 20px 1fr 17px;
   }
 
   .silder__content {
     grid-template-rows: 45px 88px 45px;
-    grid-template-columns: 79px 35.7px 177px;
+    grid-template-columns: 79px 36px 177px;
   }
 
   .silder__content_phohe-vertical {
@@ -882,8 +884,8 @@ a span {
   }
 
   .caption_text {
-    line-height: 30.5px;
-    word-spacing: 2.8px;
+    line-height: 30px;
+    word-spacing: 3px;
   }
 
   .services__item1 {
