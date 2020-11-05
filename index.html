@@ -11,11 +11,11 @@
   <body>
     <div class="background-header">
       <header class="header">
-        <div class="hamburger-menu">
+        <nav class="hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
-          </label>
+          </label>          
           <ul class="menu__box">
             <li class="menu__item menu__logo"><h3>SINGOLO<span>*</span></h3></li>
             <li><a class="menu__item" href="#home-mark">HOME</a></li>
@@ -24,24 +24,32 @@
             <li><a class="menu__item" href="#">ABOUT</a></li>
             <li><a class="menu__item" href="#footer-mark">CONTACT</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="layout-2-column">
           <h1 class="header__logo">SINGOLO<span>*</span></h1>                    
-          <nav class="header__navigation ">
-            <a href="#home-mark" class="header_link navigation_home-mark">HOME
-              <span>&#183;</span>
-            </a>
-            <a href="#our-services-mark" class="header_link navigation_our-services-mark">SERVICES
-              <span>&#183;</span>
-            </a>
-            <a href="#portfolio-mark" class="header_link navigation_portfolio-mark">PORTFOLIO
-              <span>&#183;</span>
-            </a>
-            <a href="#" class="header_link">ABOUT
-              <span>&#183;</span>
-            </a>
-            <a href="#footer-mark" class="header_link">CONTACT  
-            </a>
+          <nav class="header__navigation">
+            <ul class="header__navigation">
+              <li>
+                <a href="#home-mark" class="header_link navigation_home-mark">HOME
+                    <span>&#183;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#our-services-mark" class="header_link navigation_our-services-mark">SERVICES
+                  <span>&#183;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio-mark" class="header_link navigation_portfolio-mark">PORTFOLIO
+                  <span>&#183;</span>
+                </a>
+              </li>
+              <li><a href="#" class="header_link">ABOUT
+                <span>&#183;</span>
+              </a></li>
+              <li class="header_last-li"><a href="#footer-mark" class="header_link">CONTACT  
+              </a></li>
+            </ul>
           </nav>
         </div>
       </header>
@@ -142,12 +150,14 @@
         </p>
       </div>
       <div class="portfolio__buttons">
-        <button class="button button__all">All</button>
-        <button class="button button__web-design">Web Design</button>
-        <button class="button button__graphic-gesign">Graphic Design</button>
-        <button class="button button__artwork">Artwork</button>
+        <ul class="portfolio__buttons" id="tab">
+          <li><button class="button button__all" >All</button></li>
+          <li><button class="button button__web-design">Web Design</button></li>
+          <li><button class="button button__graphic-gesign">Graphic Design</button></li>
+          <li><button class="button button__artwork">Artwork</button></li>
+        </ul>
       </div>
-      <div class="layout-4-column">
+      <div class="layout-4-column" id="img_portfolio">
         <img class="layout-4-column_img portfolio_img1 portfolio_web" src="img/portfolio/boat.png" alt="Boat">
         <img class="layout-4-column_img portfolio_img2 portfolio_gesign" src="img/portfolio/smile .png" alt="Smile">
         <img class="layout-4-column_img portfolio_img3 portfolio_artwork" src="img/portfolio/noir.png" alt="Noir">
