@@ -2,36 +2,28 @@ const all = document.querySelector('.button__all');
 const web = document.querySelector('.button__web-design');
 const graphic = document.querySelector('.button__graphic-gesign');
 const artwork = document.querySelector('.button__artwork');
-const all_img = document.querySelector('.layout-4-column');
-const web_img = all_img.querySelector('.portfolio_web');
-const graphic_img = all_img.querySelector('.portfolio_gesign');
-const artwork_img = all_img.querySelector('.portfolio_artwork');
-const right_chev = document.querySelector('.slider__right-chev');
-const left_chev = document.querySelector('.slider__left-chev');
+const allImg = document.querySelector('.layout-4-column');
+const webImg = allImg.querySelector('.portfolio_web');
+const graphicImg = allImg.querySelector('.portfolio_gesign');
+const artworkImg = allImg.querySelector('.portfolio_artwork');
+const rightChev = document.querySelector('.slider__right-chev');
+const leftChev = document.querySelector('.slider__left-chev');
 
-
-all.addEventListener('click', () => {
-  console.log("привет")  
-  web_img.classList.remove('image-hide');
-  graphic_img.classList.remove('image-hide');
-  artwork_img.classList.remove('image-hide');
+all.addEventListener('click', (e) => {   
+  webImg.classList.remove('image-hide');
+  graphicImg.classList.remove('image-hide');
+  artworkImg.classList.remove('image-hide');
 });
-web.addEventListener('click', () => {
-  console.log("привет")
-  console.log(web_img.length)    
-  web_img.classList.toggle('image-hide');  
+web.addEventListener('click', (e) => {    
+  webImg.classList.toggle('image-hide');  
 });
-graphic.addEventListener('click', () => {
-  console.log("привет")
-  graphic_img.classList.toggle('image-hide');
+graphic.addEventListener('click', (e) => { 
+  graphicImg.classList.toggle('image-hide');
 });
-artwork.addEventListener('click', () => {
-  console.log("привет")
-  artwork_img.classList.toggle('image-hide');
+artwork.addEventListener('click', (e) => {  
+  artworkImg.classList.toggle('image-hide');
 });
-right_chev.addEventListener('click', () => {
-  console.log("привет")    
+rightChev.addEventListener('click', (e) => {   
 });
-left_chev.addEventListener('click', () => {
-  console.log("привет")    
+leftChev.addEventListener('click', (e) => {     
 });
